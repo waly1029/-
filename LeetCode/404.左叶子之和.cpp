@@ -30,6 +30,7 @@ public:
         // 后序遍历右节点
         int rightNum = process(node->right);
 
+        // 中返回计算结果
         return leftNum + rightNum;
     }
 };
