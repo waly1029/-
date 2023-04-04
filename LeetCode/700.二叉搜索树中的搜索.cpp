@@ -32,11 +32,13 @@ public:
 
         TreeNode* res = root;
         while(res) {
-            if(val == res->val) return res;
+            // if(val == res->val) return res;
             if(val < res->val)
                 res = res->left;
             else if(val > res->val)
                 res = res->right;
+            else
+                return res;
         }
 
         return nullptr;
