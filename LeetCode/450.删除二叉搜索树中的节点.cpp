@@ -43,6 +43,8 @@ public:
                 cur->left = node->left;
                 return node->right;
             }
+
+            delete deletedNode;
         }
 
         if(key < node->val) node->left = delNode(node->left, key);
